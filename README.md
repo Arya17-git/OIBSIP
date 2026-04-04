@@ -29,6 +29,24 @@ This project was completed as part of my **Data Analytics Internship at Oasis In
 *   **Marketing:** Target Females of age group 20-30 with personalized offers based on their high spending power.
 *   **Stability:** Since the data is stationary, the business should focus on maintaining its current stable customer base while experimenting with mid-week promotions.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Task 2: Customer Segmentation Analysis 📊
+
+## 🎯 Project Objective
+The goal of this project was to perform **Customer Segmentation** for an e-commerce platform (iFood) using **K-Means Clustering**. By grouping customers based on their purchase history and demographic data, we can develop targeted marketing strategies to increase retention and revenue.
+
+## 🛠️ Tech Stack
+- **Language:** Python 🐍
+- **Libraries:** Pandas, NumPy, Scikit-learn (K-Means), Matplotlib, Seaborn
+- **Environment:** Google Colab
+
+## 📈 Key Workflow
+1.  **Data Cleaning:** Handled missing values in `Income` and removed outliers to ensure clustering accuracy.
+2.  **Feature Engineering:** Created a `TotalSpent` metric and renamed `Recency` to `Days_Since_Last_Purchase` for better business clarity.
+3.  **Scaling:** Applied `StandardScaler` to normalize features (Income, Spending, and Inactivity).
+4.  **Optimal Clusters:** Used the **Elbow Method** to identify **4 distinct customer segments**.
+
+
 ---
 **Intern:** Arya Tiwari  
 **Organization:** Oasis Infobyte  
