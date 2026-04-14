@@ -46,31 +46,28 @@ The goal of this project was to perform **Customer Segmentation** for an e-comme
 3.  **Scaling:** Applied `StandardScaler` to normalize features (Income, Spending, and Inactivity).
 4.  **Optimal Clusters:** Used the **Elbow Method** to identify **4 distinct customer segments**.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------##TASK-3 Data Cleaning
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Task 3: Data Cleaning & Integrity Analysis**
 
-## Project Overview
-This project focuses on the **Data Cleaning** phase of the data analytics lifecycle. Using a global dataset of trending YouTube videos, I implemented a robust cleaning pipeline to ensure data integrity, handle missing values, and prepare the dataset for future analysis or segmentation.
+**##🎯 Project Objective**
+The goal of this project was to perform an extensive Data Cleaning process on the YouTube Trending Video dataset using Python. By unifying multiple regional datasets and addressing inconsistencies, outliers, and missing values, I ensured the data is structurally sound and reliable for high-level business intelligence and content strategy analysis.
 
-## Dataset
-Due to the large file size (approx. 500MB), the raw data is not hosted directly in this repository. 
-*   **Source:** datasnaek/youtube-new (https://kaggle.com)
-*   **Description:** Daily record of the top trending YouTube videos across multiple regions (US, GB, DE, CA, FR, etc.).
+**##🛠️ Tech Stack**
+Language: Python 🐍
+Libraries: Pandas, NumPy, Matplotlib, Seaborn
+Environment: Google Colab
 
-## Data Cleaning Implementation
-The project addresses the five pillars of data cleaning:
+**##☑️ Key Workflow**
+1.**Data Unification:** Merged multiple regional CSV files into a single master dataset and added regional tags for better data provenance.
+2.**Missing Data Handling:** Utilized fillna() to address gaps in descriptions and tags, ensuring 100% usability for future text analysis.
+3.**Standardization:** Unified date formats from YY.DD.MM to standard datetime and mapped category_id to human-readable names via JSON extraction.
+4.**Integrity & Uniqueness:** Conducted logic checks (Likes vs. Views) and removed "re-trending" duplicates to isolate unique video performance records.
+5.**Outlier Detection:** Applied the Interquartile Range (IQR) method and Log Transformations to stabilize skewed engagement metrics.
 
-1. **Data Integrity:** Verified logical consistency (e.g., ensuring likes do not exceed views) and corrected time-sequence errors between publish and trending dates.
-2. **Missing Data Handling:** Identified gaps in video descriptions and tags, applying `fillna()` strategies to maintain dataset usability without losing records.
-3. **Duplicate Removal:** Developed a strategy to handle "re-trending" videos by keeping only the peak performance record (highest views) for each unique `video_id`.
-4. **Standardization:** Unified date formats from `YY.DD.MM` to ISO standards, standardized text casing, and mapped `category_id` values to human-readable names using JSON metadata.
-5. **Outlier Detection:** Used the **Interquartile Range (IQR)** method to detect viral mega-hits. Implemented three handling strategies: Trimming, Log Transformation, and Categorical Labeling.
+**DATA SOURCE :**Kaggle - Trending YouTube Video Statistics
+Due to the large file size (approx. 500MB), the raw data is accessed directly from the source rather than hosted in this repository
 
-## Tools Used
-*   **Language:** Python
-*   **Libraries:** Pandas, Numpy, Matplotlib, Seaborn
-*   **Environment:** Google Colab
-
----
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Intern:** Arya Tiwari  
 **Organization:** Oasis Infobyte  
 **Domain:** Data Analytics
