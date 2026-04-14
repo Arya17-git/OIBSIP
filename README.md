@@ -63,7 +63,7 @@ The goal of this project was to perform an extensive **Data Cleaning** process o
 
 1. **Data Unification:** Merged multiple regional CSV files into a single master dataset and added `region` tags for better data provenance.
 2. **Missing Data Handling:** Utilized `fillna()` to address gaps in `description` and `tags`, ensuring 100% usability for future text analysis.
-3. **Standardization:** Unified date formats from `YY.DD.MM` to standard `datetime` and mapped `category_id` to names via JSON extraction.
+3. **Standardization:** Unified date formats from `YY.DD.MM` to standard `datetime` 
 4. **Integrity & Uniqueness:** Conducted logic checks (Likes vs. Views) and removed `video_id` duplicates to isolate unique performance records.
 5. **Outlier Detection:** Applied the **Interquartile Range (IQR)** method and `Log Transformation` to stabilize skewed engagement metrics.
 
