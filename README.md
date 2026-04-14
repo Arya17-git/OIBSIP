@@ -68,7 +68,7 @@ The goal of this project was to perform an extensive **Data Cleaning** process o
 5. **Outlier Detection:** Applied the **Interquartile Range (IQR)** method and `Log Transformation` to stabilize skewed engagement metrics.
 
 ---
-**Data Source:** [Kaggle - Trending YouTube Video Statistics](https://kaggle.com)
+**Data Source:** [Kaggle - Trending YouTube Video Statistics](https://www.kaggle.com/datasets/datasnaek/youtube-new/data)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Intern:** Arya Tiwari  
